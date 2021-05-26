@@ -1,0 +1,18 @@
+public class PrintArray  
+{  
+public static void main(String args[])   
+{  
+   
+String[] city = new String[4];  
+
+city[0] = "chennai";  
+city[1] = "kolkata";  
+city[2] = "delhi";  
+city[3] = "Mumbai";  
+   
+for (String str : city)   
+{  
+System.out.println(str);  
+}  
+}  
+}  
