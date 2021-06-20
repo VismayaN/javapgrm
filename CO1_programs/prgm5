@@ -1,0 +1,35 @@
+package javaapplication22;
+
+import javaapplication22.cpu.ram;
+
+class cpu{
+    int price=25000;
+    public class processor{
+    int no_cores=4;
+    String manufacturer="samsung";
+     }
+    static class ram{
+       int memory=512;
+       String manufacturer="toshiba";
+    }
+
+}
+
+
+public class JavaApplication22 {
+
+    public static void main(String[] args) {
+        // TODO code application logic here
+        cpu p1=new cpu();
+        cpu.processor p2=p1.new processor();
+        ram r=new ram();
+         System.out.println("CPU Details");
+         System.out.println(p2.no_cores+p2.manufacturer);
+          System.out.println("Ram Details");
+        System.out.println(r.memory+r.manufacturer);
+         System.out.println("Price");
+         System.out.println(p1.price);
+        
+    }
+    
+}
